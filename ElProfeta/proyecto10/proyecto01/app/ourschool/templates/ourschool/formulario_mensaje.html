@@ -1,0 +1,61 @@
+{% load static %}
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mensaje</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet"  href="{% static 'css/style.css' %}">
+    <style>
+    body{
+        background: url("{% static 'img/amorEugea.jpg' %}") no-repeat center center fixed;
+        background-size: cover;
+    }
+    </style>
+</head>
+
+<body>
+    <nav id="nav" class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+            <img src="{% static 'img/logo.png' %}" alt="logo" id="logo">
+            <a href="{% url 'cerrar_session' %}" id="close_boton4" class="btn btn-outline" type="button">terminar y salir</a>
+        </div>
+    </nav>
+
+    
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div id="contenedorcito">
+        <div class="carta">
+            <form id="messageForm" method="POST">
+                {% csrf_token %}
+                <label for="descripcion"><strong>Tu Solicitud</strong> intenta ser detalista, deja tu numero
+                    telefonico, correo, nombre, edad y solicitud, de esta manera sera mas facil para contactarte
+                </label><br>
+                <textarea id="descripcion" name="descripcion" required></textarea><br>
+                <button id="submitButton">enviar mensaje</button>
+                <a href="https://api.whatsapp.com/send?phone=16102347695"><button id="whatsapp2" class="btn btn-outline "
+                    type="button"><i class="bi bi-whatsapp"></i></button></a>
+            </form>
+
+            {% if enviado %}
+            <h6>!Mensaje enviado con éxito¡ <br>
+                pronto se pondran en contacto con usted
+                <br>para atender su solicitud.
+            </h6>
+            {% endif %}
+        </div>
+    </div>
+
+</body>
+</html>

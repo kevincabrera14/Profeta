@@ -1,0 +1,68 @@
+
+{% load static %}
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>El Profeta</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet"  href="{% static 'css/style.css' %}">
+    <script src="{% static 'js/js.js' %}"> </script>
+</head>
+
+{% if request.session.logueo.rol == 2 %}
+<body>
+    <p>rol no disponible</p>
+</body>
+
+{% elif request.session.logueo.rol == 3 %}
+
+<body id="body3">
+    <nav id="nav" class="navbar navbar-expand-lg ">
+        <div class="container-fluid">
+
+            <img src="{% static 'img/logo.png' %}" alt="logo" id="logo">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+              
+        </div>
+    </nav>
+
+    </nav>
+
+    <br>
+    <br>
+    <br>
+            
+    <div style="text-align: center;">
+        <a href="{% url 'mensajes_profesor' %}" id="ver" class="btn btn-primary">ver peticiones</a>
+        <a href="{% url 'perfil' %}" id="perfil_boton2" class="btn btn-outline" type="button">Perfil</a>
+        <a href="{% url 'cerrar_session' %}" id="close_boton2" class="btn btn-outline" type="button">Cerrar Sesión</a>
+    </div>
+        
+</body>
+
+{% elif request.session.logueo.rol == 1 %}
+
+{% load static %}
+
+<body>
+    <p>rol no disponible</p>
+</body>
+
+{% block content %}
+
+{% endblock %}
+
+{% else %}
+    <p>rol no disponible</p>
+{% endif %}
+
+</html>

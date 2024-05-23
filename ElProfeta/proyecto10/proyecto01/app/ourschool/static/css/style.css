@@ -1,0 +1,664 @@
+
+body{
+    background-color: #FFFFFF;
+   
+}
+
+a{
+    color: black;
+}
+
+#nav{
+    background-color: #000000;
+    height: 14vh;
+
+
+}
+
+#nav2{
+    background-color: #000000;
+
+}
+
+#logo{
+        width: 12vh;
+        height: 12vh;
+
+}
+
+
+/* jumbotron */
+
+#jumbotron{
+    background-color: #000000;
+    height: 80px;
+
+}
+.centrado {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.centrado-title {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.centrado-description {
+    font-size: 16px;
+}
+
+/* color/espaceado de botones login/singup */
+
+#login_boton{
+position: relative;
+    top: 1vh;
+ margin-left: 50vh;
+ background-color:#6666  ;
+ border-color: black;
+ border-radius: 11px;
+}
+
+#admin{
+    position: relative;
+    margin-right: 4vh;
+    top: 2vh;
+    text-decoration: none;
+
+}
+
+#ver{
+background-color: #6666 ;
+    border-color: black;
+    border-radius: 11px;
+}
+#singup_boton{
+    
+    background-color: #FFC107 ;
+    border-color: black;
+    border-radius: 11px;
+}
+#close_boton{
+    background-color: #FFC107 ;
+    border-color: black;
+    border-radius: 11px;
+}
+#close_boton2{
+    background-color: #6666 ;
+    border-color: black;
+    border-radius: 11px;
+    
+    top: 1vh ;
+    
+}
+#perfil_boton{
+    background-color: #6666 ;
+    border-color: black;
+    border-radius: 11px;
+    position: absolute;
+    top: 28px;
+    left: 130px;
+
+}
+#perfil_boton2{
+ background-color: #6666 ;
+    border-color: black;
+    border-radius: 11px;
+   
+    top: 1vh ;
+    left: 10vh;
+
+}
+
+#perfil_boton3{
+    background-color: #6666 ;
+    border-color: black;
+    border-radius: 11px;
+    position: relative;
+    top: 1vh ;
+    left: 10vh;
+    right: 10vh;
+}
+
+#close_boton3{
+    background-color: #6666 ;
+    border-color: black;
+    border-radius: 11px;
+    position: relative;
+    top:1vh ;
+    left: 160vh;
+    right: 10vh;
+}
+
+#perfil_boton4{
+    background-color: #6666 ;
+    border-color: black;
+    border-radius: 11px;
+    position: absolute;
+    top: 4vh;
+    left: 25vh;
+
+}
+
+#close_boton4{
+    background-color: #FFC107 ;
+    border-color: black;
+    border-radius: 11px;
+}
+
+#back-boton{
+   background-color: #6666 ;
+    border-color: black;
+    border-radius: 11px;
+    position: relative;
+
+    right: 10vh;
+
+
+
+}
+
+
+#perfil_boton5{
+    background-color: #6666 ;
+    border-color: black;
+    border-radius: 11px;
+    position: absolute;
+    top: 4vh;
+    left: 25vh;
+
+
+}
+
+#close_boton5{
+    background-color: #6666 ;
+    border-color: black;
+    border-radius: 11px;
+    position: relative;
+    left: -5vh;
+    right: 10vh;
+
+
+}
+
+#back-boton2{
+   background-color: #6666 ;
+    border-color: black;
+    border-radius: 11px;
+    position: relative;
+    right: 10vh;
+
+
+
+}
+
+#Rol{
+    align-items: center;
+}
+
+/* centrado imagenes rotativas */
+
+.centered-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    text-align: center;
+}
+
+
+
+
+
+/* Centrar todos los elementos h1 y p */
+h1,h3,h5, p {
+        text-align: center;
+    }
+
+
+
+/*imagenes rotativas*/
+
+/* centrado imagenes rotativas */
+
+.centered-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    text-align: center;
+}
+
+
+/*css imagenes rotativas*/
+
+
+.image-container {
+    position: relative;
+    width: 450px;
+    height: 300px;
+    overflow: hidden;
+}
+
+.image-container img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+.image-container img.active {
+    opacity: 1;
+    z-index: 1;
+}
+
+
+/* titulo animado */
+
+.animated-h3 {
+    animation: growShrink 5s ease-in-out infinite alternate;
+    /* Nombre de la animación, duración, temporización y repetición */
+}
+
+@keyframes growShrink {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.2);
+    }
+}
+
+a {
+    color: white;
+}
+
+#inicia{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+
+/* estilos de login */
+
+
+#barra{
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+}
+#login{
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+}
+#loginclass{
+    color: ffffff;
+        background-color:#000000;
+    }
+    .text-black {
+        --bs-text-opacity: 1;
+        color: #fff !important;
+    }
+    
+    button{
+        background-color: #747474;
+        border-bottom: black;
+        border: 1px solid #000000;
+        border-radius: 11px;
+    }
+
+    #text-login{
+        text-align: center;
+    }
+
+    #ordenar{
+        margin-left: 13px;
+    }
+
+    body {
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+    margin: 0;
+    padding: 0;
+}
+
+.perfil-card {
+    max-width: 400px;
+    margin: 50px auto;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.profile-image {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 20px;
+}
+
+.profile-details h1 {
+    margin: 0;
+    color: #333;
+}
+
+.profile-details p {
+    margin: 5px 0;
+    color: #666;
+}
+
+/* editar perfil */
+
+.contenedor {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;  /* Cambiado a min-height para garantizar que el contenedor sea al menos del 100% de la altura de la ventana */
+}
+.carta {
+    background-color: rgba(255, 255, 255, 0.6);
+    padding: 15px; /* Reducción del relleno para un aspecto más limpio */
+    border-radius: 5px; /* Reducción del radio de borde para un aspecto más suave */
+    border: 1px solid #000000; /* Borde más delgado y color más suave */
+    text-align: left; /* Alineación del texto a la izquierda */
+    max-width: 70%; /* Limita el ancho máximo para evitar que el chat sea demasiado ancho */
+    margin: 10px auto; /* Centra la carta horizontalmente */
+}
+
+/* vistas profesor*/
+
+.card {
+    position: relative;
+    height: 90%;
+    width: 80%; 
+    margin: 50px auto; 
+    background: linear-gradient(to bottom, #ec0001 50%, #f2f2f2 50%); 
+}
+
+
+.card-info {
+    padding: 20px;
+}
+
+.profile-circle {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.button-section {
+    position: absolute;
+    bottom: 10px; /* distancia desde la parte inferior */
+    right: 10px; /* distancia desde la parte derecha */
+}
+
+#logo2 {
+    position: absolute;
+    top: 65px; /* ajusta la posición vertical según sea necesario */
+    right: 70px; /* ajusta la posición horizontal según sea necesario */
+    border-radius: 50%;
+    width: 90px; /* ajusta el tamaño según sea necesario */
+    height: 90px; /* ajusta el tamaño según sea necesario */
+    z-index: 1; /* establece un valor de z-index mayor que los botones */
+}
+
+.button-section .btn {
+    margin-bottom: 5px; /* ajusta la distancia entre los botones y la imagen */
+}
+#Descripción{
+    position: relative;
+    right: 10%;
+    margin: 105px auto; /* centra la tarjeta horizontalmente */
+
+}
+
+#nose{
+
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    border: 1px solid black;  /* Añadido un borde sólido de 2px en lugar de border-bottom */
+    border-radius: 10px;
+}
+#singup_boton{
+    
+    background-color: #FFCE00 ;
+}
+
+
+#footer1{
+    background-color:#000000;
+   
+}
+#footer2{
+    background-color: #000000 ;
+    height: 4vh;
+}
+
+.mensaje {
+    background-color: #000000; /* Color de fondo más suave */
+    padding: 15px; /* Reducción del relleno para un aspecto más limpio */
+    border-radius: 8px; /* Reducción del radio de borde para un aspecto más suave */
+    border: 1px solid #000000; /* Borde más delgado y color más suave */
+    text-align: left; /* Alineación del texto a la izquierda */
+    max-width: 70%; /* Limita el ancho máximo para evitar que el chat sea demasiado ancho */
+    margin: 10px auto; /* Centra la carta horizontalmente */
+}
+
+
+#whatsapp{
+    background-color: #25D366;
+    border-color: black;
+    border-radius: 11px;
+    position: relative;
+    top: 1vh;
+    right: 1vh;
+}
+
+#whatsapp2{
+    background-color: #25D366;
+    border-color: black;
+    border-radius: 11px;
+   
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Estilos para la sección "Nuestra misión" */
+
+
+
+#prove {
+    position: relative;
+    top: 6vh;
+    left: 11vh;
+}
+
+
+/* Estilos para la sección "Nuestra visión" */
+
+#somos
+{
+    color: #FFCE00 ;
+}
+#somos01 {
+    position: relative;
+    top: 12vh;
+    left: 12vh;
+}
+
+#prove01 {
+    position: relative;
+    top: 4vh;
+}
+
+#imagenes01 {
+    position: relative;
+    top:  14vh;
+    left: 11vh;
+}
+
+/* Estilos para los comentarios */
+
+#r{
+    
+    height:45vh;
+    width: 45vh;
+    border-radius: 100%;
+ 
+}
+
+#q {
+    background-color:#000000;
+    height:45vh;
+    width: 45vh;
+    border-radius: 100%;
+  
+}
+
+
+
+     .custom-bg-1 {
+        background-color: #0866FF; /* Color de fondo personalizado para la primera columna */
+
+    }
+
+    .custom-bg-2 {
+        background-color: #25D366; /* Color de fondo personalizado para la segunda columna */
+    }
+
+    .custom-bg-3 {
+        background-color: #C90070; /* Color de fondo personalizado para la tercera columna */
+    }
+
+    .custom-bg-1, .custom-bg-2, .custom-bg-3 {
+        height: 100px; /* Establece una altura fija para cada columna */
+    }
+.custom-bg-1,
+.custom-bg-2,
+.custom-bg-3 {
+    
+    display: flex; /* Usa flexbox para alinear verticalmente */
+    align-items: center; /* Centra verticalmente el contenido */
+    justify-content: center; /* Centra horizontalmente el contenido */
+    transition: box-shadow 0.4s ease; /* Agrega transición para el cambio de sombra */
+}
+
+.custom-bg-1:hover,
+.custom-bg-2:hover,
+.custom-bg-3:hover {
+    box-shadow: 3px 3px 20px rgba(0, 0, 0, 0.9); /* Añade una sombra al pasar el mouse */
+}
+
+footer {
+    margin-top: -200px; /* Ajusta el margen superior según sea necesario */
+}
+
+
+#submitButton{
+    background-color: #FFC107;
+}
+
+
+
+
+
+
+
+img{
+    
+    
+    border-radius: 15px;
+}
+
+
+.responsive-img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+
+
+
+
+#contenedorcito {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #000000;
+    border-radius: 3px;
+    box-sizing: border-box;
+}
+
+
+.d-flex{
+    padding-right: 10;
+    background-color: #000000;
+}
+
+
+
+#forminicio{
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    width: 100%;
+}
+
+#messageForm{
+    background-color: rgba(255, 255, 255, 0.6);
+    padding: 20px;
+    border-radius: 5px;
+   
+    max-width: 400px;
+    width: 100%;
+}
+
+
+
